@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 import { navLinks } from "../data/siteData";
 
@@ -43,9 +43,9 @@ export default function Header() {
         </nav>
 
         <div className="site-header__cta">
-          <a href="/contact" className="btn btn-primary btn-sm">
+          <Link to="/contact" className="btn btn-primary btn-sm">
             無料お見積り
-          </a>
+          </Link>
         </div>
 
         <button
@@ -70,9 +70,9 @@ export default function Header() {
             お問い合わせ
           </NavLink>
         </nav>
-        <a href="/contact" className="btn btn-primary btn-block">
+        <Link to="/contact" className="btn btn-primary btn-block">
           無料お見積りを依頼する
-        </a>
+        </Link>
       </div>
     </header>
   );

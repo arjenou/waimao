@@ -13,6 +13,7 @@ import BlogPost from "./pages/BlogPost";
 import Faq from "./pages/Faq";
 import Contact from "./pages/Contact";
 import Recruit from "./pages/Recruit";
+import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
@@ -32,6 +33,7 @@ export default function App() {
           <Route path="/faq" element={<Faq />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/recruit" element={<Recruit />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

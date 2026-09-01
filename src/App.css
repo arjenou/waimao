@@ -1518,3 +1518,68 @@
   font-size: 14px;
   color: var(--navy);
 }
+
+/* ---------- Privacy ---------- */
+.privacy-content h2 {
+  font-size: 20px;
+  margin: 36px 0 14px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--cyan);
+  color: var(--navy);
+}
+
+.privacy-content p {
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.85;
+  margin-bottom: 14px;
+}
+
+.privacy-content ul {
+  list-style: none;
+  margin: 0 0 18px;
+  padding-left: 0;
+}
+
+.privacy-content ul li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+.privacy-content ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--cyan);
+}
+
+.privacy-updated {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.privacy-contact {
+  background: var(--bg);
+  border-left: 3px solid var(--cyan);
+  padding: 20px 24px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin: 16px 0 24px;
+}
+
+.privacy-contact p {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.privacy-contact p:last-child {
+  margin-bottom: 0;
+}

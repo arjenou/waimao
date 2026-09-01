@@ -64,7 +64,7 @@ export default function Footer() {
         <p className="site-footer__legal">
           <Link to="/about">会社概要</Link>
           <span>/</span>
-          <Link to="/contact">プライバシーポリシー</Link>
+          <Link to="/privacy">プライバシーポリシー</Link>
         </p>
       </div>
     </footer>
