@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 import PageHero from "../components/PageHero";
 import CtaBanner from "../components/CtaBanner";
 import Icon from "../components/Icon";
@@ -39,7 +40,7 @@ export default function Blog() {
 
           <div className="grid grid-3">
             {filtered.map((post) => (
-              <article className="blog-card card" key={post.id}>
+              <Link to={`/blog/${post.id}`} className="blog-card card" key={post.id}>
                 <div className="blog-card__thumb">
                   <img src={post.image} alt="" />
                 </div>
@@ -54,7 +55,7 @@ export default function Blog() {
                     続きを読む <Icon name="arrow" size={16} />
                   </span>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
 

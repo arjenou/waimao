@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Icon from "../components/Icon";
 import CtaBanner from "../components/CtaBanner";
-import { stats, homeServices, blogPosts, images } from "../data/siteData";
+import { homeServices, blogPosts, images } from "../data/siteData";
 
 export default function Home() {
   return (
@@ -35,7 +35,7 @@ export default function Home() {
               次世代の通関プラットフォーム。
             </h1>
             <p className="hero__sub">
-              輸出入通関代行から国際物流コンサルティング、独自ITプラットフォームによる貿易DXまで。
+              輸出入通関業務から国際物流コンサルティング、独自ITプラットフォームによる貿易DXまで。
               IT化・自動化を強みに、複雑な貿易実務をシンプルにします。
             </p>
             <div className="hero__actions">
@@ -48,17 +48,6 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="stats">
-        <div className="container stats__grid">
-          {stats.map((s) => (
-            <div className="stats__item" key={s.label}>
-              <strong>{s.value}</strong>
-              <span>{s.label}</span>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -97,10 +86,9 @@ export default function Home() {
           <div className="grid grid-2 why-us__grid">
             <div>
               <div className="eyebrow">WHY BLUE OCEAN STAR</div>
-              <h2>選ばれる3つの理由</h2>
+              <h2>通関から配送までワンストップ対応</h2>
               <p style={{ marginTop: 14 }}>
-                国内輸出入事業者様、中国・アジア圏の輸入バイヤー様、越境ECをご利用の個人事業主様まで。
-                幅広いお客様に、信頼とスピードのある通関・物流サービスを提供しています。
+                国際輸送、輸出入通関、集荷、倉庫、国内配送まで、一貫した物流サービスをご提供します。
               </p>
             </div>
             <div className="why-us__list">
@@ -144,7 +132,7 @@ export default function Home() {
 
           <div className="grid grid-3">
             {blogPosts.slice(0, 3).map((post) => (
-              <Link to="/blog" className="blog-card card" key={post.id}>
+              <Link to={`/blog/${post.id}`} className="blog-card card" key={post.id}>
                 <div className="blog-card__thumb">
                   <img src={post.image} alt="" />
                 </div>

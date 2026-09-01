@@ -70,7 +70,7 @@ export default function Goods() {
           </div>
           <div className="grid grid-3">
             {goodsCategories.map((c) => (
-              <button className="goods-card card" key={c.id} onClick={() => setActive(c.id)}>
+              <Link to={`/goods/${c.id}`} className="goods-card card" key={c.id}>
                 <div className="goods-card__photo">
                   <img src={c.image} alt={c.title} />
                 </div>
@@ -79,7 +79,7 @@ export default function Goods() {
                   <h3>{c.title}</h3>
                   <p>{c.desc}</p>
                 </div>
-              </button>
+              </Link>
             ))}
           </div>
         </div>

@@ -285,42 +285,13 @@
   }
 }
 
-/* ---------- Stats ---------- */
-.stats {
-  background: var(--navy-deep);
-  padding: 40px 0;
-}
-
-.stats__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  text-align: center;
-}
-
-.stats__item strong {
-  display: block;
-  font-family: var(--font-display);
-  font-size: clamp(24px, 3vw, 34px);
-  color: var(--cyan-light);
-}
-
-.stats__item span {
-  color: #9fb7cf;
-  font-size: 13px;
-}
-
-@media (max-width: 720px) {
-  .stats__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 /* ---------- Service cards ---------- */
 .service-card {
   position: relative;
   overflow: visible;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card:hover {
@@ -371,6 +342,9 @@
 
 .service-card__body {
   padding: 36px 28px 32px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .service-card h3 {
@@ -391,6 +365,7 @@
   font-weight: 700;
   font-size: 14px;
   color: var(--blue);
+  margin-top: auto;
 }
 
 /* ---------- Why us ---------- */
@@ -900,6 +875,8 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  text-decoration: none;
+  color: inherit;
 }
 
 .goods-card:hover {
@@ -1463,4 +1440,52 @@
 .not-found__inner p {
   color: var(--muted);
   margin-bottom: 10px;
+}
+
+/* ---------- Blog post ---------- */
+.blog-post__placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 24px;
+  background: #f0f4f8;
+  border-radius: var(--radius);
+  color: var(--muted);
+}
+
+.blog-post__placeholder h3 {
+  margin: 16px 0 8px;
+  color: var(--navy);
+  font-size: 18px;
+}
+
+.blog-post__placeholder p {
+  font-size: 14px;
+  color: var(--navy);
+}
+
+/* ---------- Goods item ---------- */
+.goods-item__placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 24px;
+  background: #f0f4f8;
+  border-radius: var(--radius);
+  color: var(--muted);
+}
+
+.goods-item__placeholder h3 {
+  margin: 16px 0 8px;
+  color: var(--navy);
+  font-size: 18px;
+}
+
+.goods-item__placeholder p {
+  font-size: 14px;
+  color: var(--navy);
 }

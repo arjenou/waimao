@@ -10,7 +10,7 @@ export default function Services() {
         breadcrumb="サービス一覧"
         eyebrow="OUR SERVICES"
         title="サービス一覧"
-        desc="輸出入通関代行・国際物流コンサルティング・スマート物流の3領域で、貿易実務をワンストップサポートします。"
+        desc="輸出入通関業務・国際物流コンサルティング・スマート物流の3領域で、貿易実務をワンストップサポートします。"
       />
 
       <section className="section">

@@ -15,90 +15,87 @@ export default function About() {
 
       <section className="section">
         <div className="container">
-          <div className="grid grid-2 about-intro">
-            <div className="card about-table">
-              <h3>会社情報</h3>
-              <table>
-                <tbody>
-                  <tr>
-                    <th>社名</th>
-                    <td>{company.name}</td>
-                  </tr>
-                  <tr>
-                    <th>設立</th>
-                    <td>{company.established}</td>
-                  </tr>
-                  <tr>
-                    <th>代表取締役</th>
-                    <td>{company.ceoName}</td>
-                  </tr>
-                  <tr>
-                    <th>資本金</th>
-                    <td>{company.capital}</td>
-                  </tr>
-                  <tr>
-                    <th>本社</th>
-                    <td>{company.headOffice}</td>
-                  </tr>
-                  <tr>
-                    <th>営業所</th>
-                    <td>{company.salesOffice}</td>
-                  </tr>
-                  <tr>
-                    <th>海外拠点</th>
-                    <td>{company.overseasOffice}</td>
-                  </tr>
-                  <tr>
-                    <th>取引銀行</th>
-                    <td>{company.bank}</td>
-                  </tr>
-                  <tr>
-                    <th>許認可</th>
-                    <td>{company.license}</td>
-                  </tr>
-                  <tr>
-                    <th>事業内容</th>
-                    <td>
-                      <ul className="about-table__list">
-                        {company.businessList.map((b) => (
-                          <li key={b}>{b}</li>
-                        ))}
-                      </ul>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>TEL</th>
-                    <td>{company.tel}</td>
-                  </tr>
-                  <tr>
-                    <th>E-mail</th>
-                    <td>{company.email}</td>
-                  </tr>
-                </tbody>
-              </table>
+          <div className="greeting card" style={{ marginBottom: 32 }}>
+            <div className="greeting__body">
+              <Icon name="quote" size={30} className="greeting__icon" />
+              <div className="eyebrow">私たちの想い</div>
+              <h3>人と企業の挑戦を支え、より良い未来へつなぐ。</h3>
+              <p>
+                私たちは、国際物流と通関サービスを通じて、お客様の事業に寄り添い、成長の歩みを共にする存在でありたいと考えています。目の前の業務を確実に遂行するだけでなく、その先にある事業の発展を見据え、社会に必要とされる価値を生み出していきます。
+              </p>
+              <p>
+                同時に、社員一人ひとりが自分らしく働き、能力を十分に発揮できる環境づくりも、私たちの大切な使命です。特に女性が働き続けやすく、家庭やライフステージの変化にかかわらず、挑戦と成長を続けられる会社を目指しています。
+              </p>
+              <p>
+                立場や固定観念にとらわれず、自由でオープンな姿勢を大切にすること。互いの違いを尊重し、誰かの可能性を引き出し、挑戦を後押しできる場をつくること。
+              </p>
+              <p>
+                お客様、社員、パートナー企業と共に成長し、関わるすべての人の未来に貢献できる企業であり続けます。
+              </p>
+              <p className="greeting__sign">ブルーオーシャンスター株式会社<br />チーム一同</p>
             </div>
+          </div>
 
-            <div className="greeting card">
-              <div className="greeting__body">
-                <Icon name="quote" size={30} className="greeting__icon" />
-                <div className="eyebrow">ご挨拶</div>
-                <h3>お客様の成功を、共に築くパートナーとして</h3>
-                <p>
-                  ブルーオーシャンスターは、2024年2月に通関業許可を取得して、国際物流サービスの分野において、
-                  お客様のニーズに合った包括的で信頼性のあるソリューションを提供し、お客様の貨物を効率的かつ安全に運び、
-                  供給チェーン全体を最適化することに専念しています。
-                </p>
-                <p>
-                  当社のチームは経験豊富で専門的な知識を持ち、効率的なプロセスを組み合わせ迅速でコスト効果の高いサービスを提供し、
-                  国内および国際輸送、倉庫管理、通関手続およびアドバイスに加えて、お客様の個別の要件に合わせてカスタマイズもできます。
-                </p>
-                <p>
-                  私たちは、お客様の成功を共に築くこととお客様のビジネスに貢献できることを誇りに思っています。
-                  どうぞお気軽にお問い合わせください。
-                </p>
-                <p className="greeting__sign">{company.ceo}</p>
-              </div>
-            </div>
+          <div className="card about-table">
+            <h3>会社情報</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <th>社名</th>
+                  <td>{company.name}</td>
+                </tr>
+                <tr>
+                  <th>設立</th>
+                  <td>{company.established}</td>
+                </tr>
+                <tr>
+                  <th>代表取締役</th>
+                  <td>{company.ceoName}</td>
+                </tr>
+                <tr>
+                  <th>資本金</th>
+                  <td>{company.capital}</td>
+                </tr>
+                <tr>
+                  <th>本社</th>
+                  <td>{company.headOffice}</td>
+                </tr>
+                <tr>
+                  <th>営業所</th>
+                  <td>{company.salesOffice}</td>
+                </tr>
+                <tr>
+                  <th>海外拠点</th>
+                  <td>{company.overseasOffice}</td>
+                </tr>
+                <tr>
+                  <th>取引銀行</th>
+                  <td>{company.bank}</td>
+                </tr>
+                <tr>
+                  <th>許認可</th>
+                  <td>{company.license}</td>
+                </tr>
+                <tr>
+                  <th>事業内容</th>
+                  <td>
+                    <ul className="about-table__list">
+                      {company.businessList.map((b) => (
+                        <li key={b}>{b}</li>
+                      ))}
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th>TEL</th>
+                  <td>{company.tel}</td>
+                </tr>
+                <tr>
+                  <th>E-mail</th>
+                  <td>{company.email}</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
@@ -107,7 +104,7 @@ export default function About() {
         <div className="container">
           <div className="section-head section-head--center">
             <div className="eyebrow">HISTORY</div>
-            <h2>沿革</h2>
+            <h2>企業沿革</h2>
           </div>
           <div className="timeline">
             {history.map((h) => (
@@ -141,7 +138,10 @@ export default function About() {
                 <Icon name="pin" size={18} /> 本社：{company.headOffice}
               </div>
               <div>
-                <Icon name="pin" size={18} /> 営業所：{company.salesOffice}
+                <Icon name="pin" size={18} /> 大阪事務所：{company.salesOffice}
+              </div>
+              <div style={{ paddingLeft: 32 }}>
+                <Icon name="phone" size={16} /> T : {company.tel} / F : 047-413-6111
               </div>
               <div>
                 <Icon name="pin" size={18} /> 海外拠点：{company.overseasOffice}

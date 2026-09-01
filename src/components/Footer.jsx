@@ -10,9 +10,9 @@ export default function Footer() {
         <div className="site-footer__brand">
           <Logo />
           <p>
-            日本と世界をつなぐ、次世代の通関プラットフォーム。
+            日本と世界をつなぐ、次世代の国際物流・通関サービス。
             <br />
-            輸出入通関代行・国際物流・貿易DXで、お客様のビジネスをサポートします。
+            輸出入通関、国際物流、貿易DXをワンストップで提供し、お客様のビジネスの成長を支えます。
           </p>
           <div className="site-footer__contact">
             <span>
