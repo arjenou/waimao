@@ -1,0 +1,20 @@
+{
+  "redirects": [
+    {
+      "source": "/company_profile",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/company_profile/",
+      "destination": "/about",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
