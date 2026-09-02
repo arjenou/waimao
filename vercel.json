@@ -9,6 +9,16 @@
       "source": "/company_profile/",
       "destination": "/about",
       "permanent": true
+    },
+    {
+      "source": "/company",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/company/",
+      "destination": "/about",
+      "permanent": true
     }
   ],
   "rewrites": [
